@@ -1,0 +1,594 @@
+@import url(rootelements.css);
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    background: url('banner-1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: top;
+}
+
+.toggle,
+.list-items-mobile-view,
+.hamburger {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.head-navbar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head-navbar-container .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: stretch;
+    width: 100%;
+    height: 8%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    z-index: 999999;
+}
+
+.head-navbar-container .top {
+    background-color: var(--background-color);
+    border-bottom: var(--border-bottom);
+    backdrop-filter: blur(10px);
+    box-shadow: 1px 0px 10px rgba(102, 102, 102, 0) !important;
+}
+
+.navbar>h2 {
+    font-family: var(--font-monotype);
+    flex-shrink: 0;
+}
+
+.navbar>h2>a {
+    font-size: 1em;
+    padding-left: 15px;
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+}
+
+.navbar>h2>a:hover {
+    color: #212121;
+}
+
+.list-items {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .list-items ul {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar .list-items ul li {
+    text-align: center;
+    list-style: none;
+    height: 100%;
+}
+
+.navbar .list-items ul li a {
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+    color: var(--color-font);
+    text-decoration: none;
+    font-family: var(--font-raleway);
+    height: 100%;
+    padding: 0px 30px;
+    margin-left: 1px;
+    transition: 1s;
+}
+
+.navbar .list-items ul li .active {
+    background-color: var(--background-secondary);
+    border-bottom: var(--border-bottom);
+    color: var(--color-hover);
+}
+
+.navbar .list-items ul li a:hover {
+    background-color: var(--background-secondary);
+    border-bottom: var(--border-bottom);
+    color: var(--color-hover);
+}
+
+.navbar .list-items .contact {
+    display: none;
+}
+
+.navbar .list-items .contact-mobile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .list-items .contact-mobile .mobile-numbers {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: left;
+    padding: 0px 10px;
+    font-size: .8em;
+    color: var(--color-font);
+}
+
+.navbar .list-items .contact-mobile a {
+    color: #212121 !important;
+}
+
+.navbar .list-items .contact-mobile .mobile-numbers p {
+    padding: 2px 0px;
+}
+
+header .form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    flex-shrink: 0;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+}
+
+.form .form-container {
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 20px;
+    margin-right: 15px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #666;
+    border-top: 6px solid #212121;
+    backdrop-filter: blur(10px);
+}
+
+.form .form-container form {
+    width: 100%;
+}
+
+.form-container2>.form-wrap>h2 {
+    font-family: var(--font-roboto);
+    text-align: center;
+    color: var(--color-red);
+    letter-spacing: 1px;
+}
+
+.form-container2 .form-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container2 .form-heading-bottom-line {
+    border: 1px solid #212121;
+    margin: 25px 0px;
+    width: 25%;
+    border-radius: 5px;
+}
+
+.form .form-container form input,
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    font-family: var(--font-raleway);
+    font-size: 1em;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.form .form-container form input[type=button] {
+    background-color: #212121;
+    color: #fff;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: var(--font-roboto);
+    font-size: 1em;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    font-family: var(--font-raleway);
+    letter-spacing: 1px;
+}
+
+.form .form-container form input[type=button] {
+    background-color: #212121;
+    color: #fff;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: var(--font-roboto);
+    font-size: 1em;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    font-family: var(--font-raleway);
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.form .form-container form input[type=button]:hover {
+    background-color: #0c0b0b;
+    cursor: pointer;
+}
+
+.ourworks {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 20vmin;
+    background-color: var(--background-secondary);
+    font-family: var(--font-raleway);
+    font-size: 1.2rem;
+    box-shadow: -2px -2px 20px rgba(102, 102, 102, .5);
+}
+
+.ourworks h1 {
+    font-weight: 300;
+    color: #666;
+}
+
+.ourworks hr {
+    width: 8%;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    margin: 8px 0px;
+}
+
+.image-gird {
+    background-color: var(--background-secondary);
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 50px;
+    padding: 0px 20px 20px 20px;
+}
+
+.image-gird .img-wrap {
+    border: 1px solid #ccc;
+    max-width: 100%;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.image-gird .img-wrap .img {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-gird .img-wrap .content {
+    position: absolute;
+    z-index: 55;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(10px);
+    animation: roll .3s;
+    animation-fill-mode: forwards;
+    animation-direction: alternate;
+    display: none;
+}
+
+.content .image-view {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 22;
+}
+
+.image-gird .img-wrap .content .image-view i {
+    font-size: 2rem;
+    color: #212121;
+}
+
+.image-gird .img-wrap .content .image-view h3 {
+    font-family: var(--font-raleway);
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: var(--color-font);
+    padding: 10px 0px;
+}
+
+.image-gird .img-wrap .img:hover~.content {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    pointer-events: none;
+}
+
+@keyframes roll {
+    0% {
+        transform: scale(0.9, 0.9);
+    }
+    100% {
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.madeincanada {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    width: 100%;
+}
+
+.madeincanadalogo .flag {
+    width: 100%;
+    background: url('ca_leaf.svg') no-repeat;
+    padding: 90px 10px;
+    background-position: 50%;
+    background-size: 140%;
+    position: relative;
+    top: 0px;
+    border-left: 60px solid #bf0a30;
+    border-right: 60px solid #bf0a30;
+    font-size: 200%;
+    font-weight: 500;
+    font-family: var(--font-raleway);
+    padding: 90px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #444;
+}
+
+.madeincanadalogo .flag .flag-line {
+    border-radius: 5px;
+    border: 1px solid #212121;
+    border-radius: 5px;
+    width: 50%;
+    margin: 10px 0px 0px 0px;
+}
+
+.madeincanadaicons {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: auto;
+    margin-top: 10px;
+}
+
+.svgimg1 {
+    width: 100%;
+    background: url('hammer.svg') no-repeat;
+    padding: 100px 100px;
+    background-position: 50%;
+}
+
+.svgimg2 {
+    width: 100%;
+    background: url('home.svg') no-repeat;
+    padding: 100px 100px;
+    background-position: 50%;
+}
+
+.svgimg3 {
+    width: 100%;
+    background: url('pencil.svg') no-repeat;
+    padding: 100px 100px;
+    background-position: 50%;
+}
+
+.madeincanadaicons-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 30%;
+}
+
+.svgimg-content {
+    text-align: center;
+    padding: 20px 0px;
+    font-family: var(--font-raleway);
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.svgimg-content h4 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    color: #444;
+    margin: 20px 0px;
+}
+
+.svgimg-content p {
+    max-width: 100%;
+    letter-spacing: inherit;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #212121;
+    padding: 10px 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.online-offer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 50px 30px;
+    background-color: rgb(248, 248, 248);
+}
+
+.form-bottom {
+    width: 80%;
+    padding: 0px 10px;
+    border: none;
+}
+
+.form-container-bottom {
+    width: 70%;
+}
+
+.form-container-bottom2 .form-wrap h2 {
+    font-family: var(--font-raleway);
+    color: #212121;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 2rem;
+}
+
+.form-container-bottom2 .form-line {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.form-container-bottom2 .form-heading-bottom-line {
+    border: 1px solid #212121;
+    margin: 20px 0px 10px 0px;
+    width: 20%;
+    border-radius: 5px;
+}
+
+.form-container-bottom2 input,
+textarea {
+    width: 100%;
+    padding: 10px 10px;
+    font-family: var(--font-raleway);
+    font-size: 1em;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.form-container-bottom2 input[type=button] {
+    background-color: #212121;
+    color: #fff;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: var(--font-roboto);
+    font-size: 1em;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    font-family: var(--font-raleway);
+    letter-spacing: 1px;
+}
+
+.form-container-bottom2 input[type=button] {
+    background-color: #212121;
+    color: #fff;
+    width: 100%;
+    padding: 10px 10px;
+    font-family: var(--font-roboto);
+    font-size: 1em;
+    border: 2px solid rgb(216, 215, 215);
+    border-radius: 5px;
+    font-family: var(--font-raleway);
+    letter-spacing: 1px;
+    transition: 1s;
+}
+
+.form-container-bottom2 input[type=button]:hover {
+    background-color: #0c0b0b;
+    cursor: pointer;
+}
+
+.form-container-bottom2 .form-wrap .blink {
+    padding: 10px 0px;
+    font-size: 1.5rem;
+    font-family: var(--font-raleway);
+    font-weight: 500;
+    animation: blink 1s;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.footer-up {
+    display: flex;
+    width: 100%;
+    padding: 10px 0px;
+    background-color: rgb(255, 255, 255);
+}
+
+footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #212121;
+    padding: 20px 20px;
+    color: #fff;
+    font-family: var(--font-raleway);
+    flex-shrink: 0;
+}
+
+footer h3 a {
+    font-family: var(--font-monotype);
+    font-weight: 500;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+footer p {
+    font-size: .8rem;
+    font-weight: 200;
+    letter-spacing: 1px;
+    color: rgb(209, 209, 209);
+}
